@@ -1,0 +1,46 @@
+netra:
+ name: Alfresco
+ meta_data:
+    template: Alfresco
+    description: This is a netra stack template for alfresco
+    version: 0.1
+    author: james
+ databag:
+    ip: my_databag_test
+    gateway: 192.168.11.33
+    nameserver: netra.netranet.local
+    user_id: vagrant
+    password: vagrant
+    network:
+      eth0: nic0
+      eth1: nic1
+ role:
+    - name: alfresco
+      cookbook:
+        - chef-alfresco
+ cookbook:
+    - name: chef-alfresco
+      git: https://github.com/fnichol/chef-alfresco
+      branch: 
+      parameter:
+        - file: default.rb
+          attribute:
+            - default['alfresco']['default_port']     = "8080"
+            - default['alfresco']['jodconverter']['port_numbers']  = "8100"
+            - default['alfresco']['mail']['from']['default']  = "alfresco@alfresco.org"
+        - file: mysql_server.rb
+          attribute:
+            - default['alfresco']['db']['user']      = "alfresco"
+            - default['alfresco']['db']['password']  = "alfresco"
+            - default['alfresco']['db']['database']  = "alfresco"
+        - file: nginx_proxy_conf.rb
+          attribute:
+            - default['alfresco']['nginx']['listen_ports']   = [ 80 ]
+ layer:
+    - name: alfresco
+      meta_data:
+        description: this layer include whole thing
+      server:
+        - name: 
+          role:
+            - alfresco
