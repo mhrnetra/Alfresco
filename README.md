@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # <a name="title"></a> chef-alfresco [![Build Status](https://secure.travis-ci.org/fnichol/chef-alfresco.png?branch=master)](http://travis-ci.org/fnichol/chef-alfresco)
 
 ## <a name="description"></a> Description
@@ -218,3 +219,9 @@ limitations under the License.
 [fnichol]:      https://github.com/fnichol
 [repo]:         https://github.com/fnichol/chef-alfresco
 [issues]:       https://github.com/fnichol/chef-alfresco/issues
+=======
+Alfresco
+========
+
+This is a First Alresco Netra Stack Template
+>>>>>>> 290971b1ef846e2977afdfb739399ee3ec37fde0
