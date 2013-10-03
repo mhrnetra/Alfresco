@@ -40,7 +40,7 @@ netra:
     - name: alfresco
       meta_data:
         description: this layer include whole thing
+      role:
+        - alfresco
       server:
         - name: 
-          role:
-            - alfresco
