@@ -4,7 +4,9 @@ netra:
     template: Alfresco
     description: This is a netra stack template for alfresco
     version: 0.1
+    homepage: www.daum.net
     author: james
+    author_homepage: www.naver.com
  databag:
     ip: my_databag_test
     gateway: 192.168.11.33
