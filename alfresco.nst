@@ -4,7 +4,7 @@ netra:
     template: Alfresco
     description: This is a netra stack template for alfresco
     version: 0.1
-    homepage: www.daum.net
+    homepage: https://github.com/mhrnetra/alfresco
     author: james
     author_homepage: www.naver.com
  databag:
